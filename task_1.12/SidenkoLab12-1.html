@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .registration-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+        .registration-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-left: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .registration-buttons a:hover {
+            background-color: white;
+            color: #007bff;
+        }
+        .user-info {
+            text-align: left;
+        }
+        .registration-form {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="user-info">
+            <h1>МІЙ ОСОБИСТИЙ БЛОГ</h1>
+            <p>Сіденко Артем</p>
+        </div>
+        <div class="registration-buttons">
+            <a href="SidenkoLab10-1.html">Реєстрація</a>
+            <a href="#">Вхід</a>
+        </div>
+    </div>
+    <div class="registration-form">
+        <h2>РЕЄСТРАЦІЯ КОРИСТУВАЧА</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first_name">Ім'я:</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Прізвище:</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Логін:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="group">Група:</label>
+                <select id="group" name="group">
+                    <option value="group1">Група 101ТК</option>
+                    <option value="group2">Група 102ТК</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Підтвердження паролю:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <input type="submit" value="Зареєструватися">
+        </form>
+    </div>
+</body>
+</html>
