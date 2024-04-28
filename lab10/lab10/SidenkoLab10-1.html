@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Адаптивна розмітка з CSS Grid Layout</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        padding: 100px;
+        justify-content: center;
+    }
+    
+    .block {
+        background-color: #8A2BE2;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+    .block2 {
+        background-color: #4B0082;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+    .block3 {
+        background-color: #6A5ACD;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+
+    .block4 {
+        background-color: #7B68EE;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+
+    .block5 {
+        background-color: #9370DB;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+
+    .block9 {
+        background-color: #9400D3;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+
+    .block10 {
+        background-color: #9932CC;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+    .block11 {
+        flex: 3 1 calc(100% - 6px); 
+        background-color: #BA55D3;
+        border: 1px solid #fff;
+        margin: 3px;
+    }
+
+
+    .block:nth-child(1) {
+        flex: 2 1 calc(40% - 6px); 
+    }
+
+    .block2:nth-child(2) {
+        flex: 1 1 calc(20% - 6px); 
+    }
+
+    .block3:nth-child(3) {
+        flex: 1 1 calc(20% - 6px);
+    }
+
+    .block4:nth-child(4) {
+        flex: 2 1 calc(20% - 6px); 
+    }
+
+    .block5:nth-child(5) {
+        flex: 2 1 calc(20% - 6px); 
+    }
+
+    .block:nth-child(6) {
+        flex: 1 1 calc(20% - 6px); 
+    }
+
+    .block:nth-child(7) {
+        flex: 1 1 calc(20% - 6px); 
+    }
+
+    .block:nth-child(8) {
+        flex: 1 1 calc(20% - 6px); 
+    }
+
+    .block9:nth-child(9) {
+        flex: 1 1 calc(20% - 6px); 
+    }
+
+    .block10:nth-child(10) {
+        flex: 1 1 calc(20% - 6px); 
+    }
+
+
+    @media (max-width: 500px) {
+        .wrapper {
+            flex-direction: column;
+        }
+        .block,
+        .block2 {
+            flex: 1 1 calc(100% - 6px);
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 750px) {
+        .block:nth-child(1),
+        .block:nth-child(2),
+        .block:nth-child(3),
+        .block:nth-child(4),
+        .block:nth-child(5),
+        .block:nth-child(6) {
+            flex: 1 1 calc(50% - 6px); 
+        }
+    }
+
+    @media (min-width: 750px) and (max-width: 950px) {
+        .block:nth-child(1),
+        .block:nth-child(2),
+        .block:nth-child(3),
+        .block:nth-child(4),
+        .block:nth-child(5),
+        .block:nth-child(6),
+        .block:nth-child(7),
+        .block:nth-child(8) {
+            flex: 1 1 calc(25% - 6px); 
+        }
+    }
+
+    @media (min-width: 950px) and (max-width: 1200px) {
+        .block:nth-child(1),
+        .block:nth-child(2),
+        .block:nth-child(3),
+        .block:nth-child(4),
+        .block:nth-child(5),
+        .block:nth-child(6),
+        .block:nth-child(7),
+        .block:nth-child(8),
+        .block:nth-child(9) {
+            flex: 1 1 calc(20% - 6px); 
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .block:nth-child(1),
+        .block:nth-child(2),
+        .block:nth-child(3),
+        .block:nth-child(4),
+        .block:nth-child(5),
+        .block:nth-child(6),
+        .block:nth-child(7),
+        .block:nth-child(8),
+        .block:nth-child(9),
+        .block:nth-child(10) {
+            flex: 1 1 calc(20% - 6px); 
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+   
+    <div class="block" style="background-color: #800080;">1</div>
+    <div class="block2">2<br><br></div>
+    <div class="block3">3<br><br></div>
+    <div class="block4">4<br><br></div>
+    <div class="block5">5<br><br></div>
+    <div class="block" style="background-color: #C71585;">6</div>
+    <div class="block" style="background-color: #FF1493;">7</div>
+    <div class="block" style="background-color: #FF69B4;">8</div>
+    <div class="block9">9<br><br></div>
+    <div class="block10">10<br><br></div>
+    <div class="block11">11<br><br></div>
+</div>
+
+</body>
+</html>
+
